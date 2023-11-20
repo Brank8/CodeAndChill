@@ -1,0 +1,56 @@
+<%- include('../partials/header') %>
+
+<h2>Choose from the categories below:</h2>
+
+<form id="new-form" action="/products" method="POST">
+  <label
+    >🍽️ Meals (Required):
+    <select name="meals" type="String">
+      <option value="Pizza">Pizza</option>
+      <option value="Mac&Cheese">Mac&Cheese</option>
+      <option value="Cheeseburger">Cheeseburger</option>
+      <option value="Salad">Salad</option>
+      <option value="Chicken Soup">Chicken Soup</option>
+    </select> </label
+  ><br />
+  <h1></h1>
+
+  <label
+    >🥬 Vegetables:
+    <select name="vegetables" type="String">
+      <option value="Not selected">Select vegetables</option>
+      <option value="Tomatoes">Tomatoes</option>
+      <option value="Onions">Onions</option>
+      <option value="Cucumbers">Cucumbers</option>
+      <option value="Carrots">Carrots</option>
+      <option value="Lettuce">Lettuce</option>
+    </select> </label
+  ><br />
+  <h1></h1>
+  <label
+    >🍴 Kitchen ware:
+    <select name="kitchenware" type="String">
+      <option value="Not selected">Select Kitchen ware</option>
+      <option value="Kitchen knife">Kitchen knife</option>
+      <option value="10-set spoons">10-set spoons</option>
+      <option value="10-set plates">10-set plates</option>
+      <option value="20pcs cups">20pcs cups</option>
+    </select> </label
+  ><br />
+  <h1></h1>
+  <label
+    >🍞 Bread:
+    <select name="bread" type="String">
+      <option value="Not selected">Select bread</option>
+      <option value="Wheat">Wheat</option>
+      <option value="Toast">Toast</option>
+      <option value="French">French</option>
+      <option value="Burger buns">Burger buns</option>
+    </select> </label
+  ><br />
+  <h1></h1>
+  <button type="submit">Go to checkout</button>
+</form>
+<p><%= errorMsg %></p>
+
+<%- include('../partials/footer') %>

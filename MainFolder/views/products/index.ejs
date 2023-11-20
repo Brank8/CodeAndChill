@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+
+<h2>Your Products:</h2>
+    <!-- <th>Meals</th> 
+</br>  
+    <th>Vegetables</th>
+</br> 
+    <th>Kitchen ware</th>
+</br> 
+    <th>Bread</th> -->
+
+
+<h3>
+  <% products.forEach(p => { %>
+    <td><th>🍽️ Meals: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><%= p.meals %></td>
+  </br>
+    <td><th>🥬 Vegetables: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><%= p.vegetables %></td>
+</br>
+    <td><th>🍴 Kitchen ware: &nbsp;</th><%= p.kitchenware %></td>
+</br>
+    <td><th>🍞 Bread: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><%= p.bread %></td>
+</br>
+<!-- </tbody> -->
+<% }) %>
+</h3>
+<!-- /${newProduct._id} -->
+<%- include('../partials/footer') %>

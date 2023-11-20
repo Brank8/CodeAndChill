@@ -6,8 +6,27 @@ const productsCtrl = require('../controllers/products')
 //   res.send('respond with a resource');
 // });
 
-router.get('/', productsCtrl.index)
+// router.get('/', productsCtrl.index)
 
+// router.get("/new", productsCtrl.new);
+
+// // router.post("/:id", productsCtrl.create);
+
+// router.get("/show", productsCtrl.show);
+
+// router.post('/products/:id/show', productsCtrl.create)
+
+// router.post("/show", productsCtrl.create);
+
+// router.get("/:id/show", productsCtrl.show);
+
+router.get("/new", productsCtrl.new);
+
+router.get("/:id", productsCtrl.show);
+
+router.get("/", productsCtrl.index);
+
+router.post("/", productsCtrl.create);
 
 
 
